@@ -1,0 +1,102 @@
+#trans_div{
+	background-color:rgb(43, 120, 228);
+	font-size:14px;
+	font-family:helvetica, arial, sans-serif;
+	padding:6px;
+	color:white;
+	position:absolute;
+	z-index:1000000;
+	border-radius:5px;
+	max-width:450px;
+}
+
+#trans_div br{
+	line-height: 190%;
+}
+
+#trans_div span{
+	color:white;
+	font-family:helvetica, arial, sans-serif;
+	font-size:14px;
+}
+
+#learning_div{
+	background-color: rgba(237, 234, 64, 0.9);
+	font-size:14px;
+	font-family:helvetica, arial, sans-serif;
+	color:black;
+	position:fixed;
+	z-index:1000000;
+	max-width:450px;
+	min-width:150px;
+	right:50px;
+	bottom:50px;
+	line-height:150%;	
+	padding:10px 0px 5px 0px;
+	box-shadow: 3px 3px 3px black;
+}
+
+#en-question{
+	padding: 3px 10px;
+	font-weight:bold;
+}
+
+.vi-answer{
+	padding:3px 10px;
+}
+
+.vi-answer:hover{
+	background-color:#EEE;
+	cursor:pointer;
+}
+
+#deco_listen{
+	height:16px;
+	padding-left: 7px;
+	vertical-align: middle;
+}
+
+#en-pronounce{
+	font-size: 12px;
+}
+
+.btn-group-xs>.btn, .btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+.btn-success {
+	color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #D58513;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+button {
+    overflow: visible;
+}

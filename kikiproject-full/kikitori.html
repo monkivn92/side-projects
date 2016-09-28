@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<script src="JQLib.js"></script>
+	<script src="jp.js"></script>
+	<link rel="stylesheet" href="jp.css">
+
+</head>
+<body >
+<div id="control-panel">
+    <h3>No Scripts Section</h3>
+	<form action="">
+		<span>
+			<label for="">Choose File to play: </label>
+			<input type="file" id="choose_audio_file">
+		</span>
+		<span>
+			<label for="">Choose Kanji Image: </label>
+			<input type="file" id="choose_kanji_image">
+		</span>
+	</form>
+	&nbsp;
+	<div>
+		
+		<audio  id="player" 	controls>
+		  <source src="" id="player_src" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+		
+	</div>
+
+	<h3>Scripts Section</h3>
+	<label for="">Time mapping</label><br>
+	<textarea name="" id="time_mapping" cols="70" rows="3">{"p1":5.23,"p3":7.56,"p5":8.88}</textarea>
+	<button id="save_mapping">APPLY TIME MAPPING</button>
+
+	<audio  id="player2" 	controls>
+	  <source src="" id="player_src2" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	
+</div>
+
+<div id="bottom-panel">
+	<button id="btn_play">Whisky</button>
+	<button id="undo">Gin</button>
+	<button id="clear-border">vnhandbook.com</button>
+</div>
+
+<hr>
+
+<div id="main-area">	
+
+	<h1 id="time_play">
+		
+	</h1>
+	
+	<div id="counter-container">
+		<p id="counter">
+			
+		</p>
+	</div>
+	<div id="kanji">
+		<img src="" alt="" id="kanji-img" width="300">
+	</div>
+</div>
+
+<div id="copyright">
+	<div id="left">
+		
+		<img src="u.png" alt="" width="50">
+		
+		<p>Whisky Gin Channel</p>
+	</div>
+	<div id="right">
+		
+		<img src="w.png" alt="" width="50">
+		
+		<p>vnhandbook.com</p>
+	</div>
+</div>
+
+<hr>
+
+<div id="text-source">
+	<div class="script-txt" contenteditable="true" id="p1">
+		このカー子ちゃんの趣味はドライブです。木村さんが車で出かけるときに は、車の屋根に乗ってどこまでもついて行きます。スピードが出ると、羽を広 げて上手にバランスを取り、あたりをきょろきょろ眺めながらドライブを楽し んでいます。 カー子ちゃんは自分がカラスであることを忘れてしまったようだと木村さ んは話しています。
+	</div>
+
+	<div class="script-txt" contenteditable="true" id="p2">
+		
+	</div>
+	<div class="script-txt" contenteditable="true" id="p3">
+		
+	</div>
+	<div class="script-txt" contenteditable="true" id="p4">
+		
+	</div>
+	<div class="script-txt" contenteditable="true" id="p5">
+		
+	</div>
+	<div class="script-txt" contenteditable="true" id="p6">
+		
+	</div>
+
+	<div class="script-txt" contenteditable="true" id="p7">
+		
+	</div>
+	<div class="script-txt" contenteditable="true" id="p8">
+		
+	</div>
+	<div class="script-txt" contenteditable="true" id="p9">
+		
+	</div>
+	<div class="script-txt" contenteditable="true" id="p10">
+		
+	</div>
+
+</div>
+
+</body>
+</html>

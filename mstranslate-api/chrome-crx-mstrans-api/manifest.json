@@ -1,0 +1,32 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"manifest_version": 2,
+	"name": "Học Từ Vựng",
+	"short_name": "Learning Vocabulary",
+	"description": "Ứng dụng dịch và học tiếng anh online",
+	"version": "1.6",
+  
+	"permissions": [
+		"storage",
+		"activeTab",
+		"*://*/*"
+	],  
+
+	"web_accessible_resources": [
+		"images/*.png"
+	],
+	
+	"browser_action": {
+		"default_icon": "images/icon.png",
+		"default_popup": "views/popup.html"
+	},
+	
+	"content_scripts": [
+		{
+		"matches": ["*://*/*"],
+		"css": ["css/main.css"],
+		"js": ["js/jquery-1.11.3.min.js", "main.js"]
+		}
+	]
+}
