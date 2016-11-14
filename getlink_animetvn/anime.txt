@@ -1,0 +1,37 @@
+var div = document.createElement('div'); 		       
+div.id = 'results';
+div.style.border = "2px solid red";
+document.body.appendChild(div);  
+
+var epp = document.querySelectorAll('.svep:first-child a');
+var epp_len = epp.length;
+for (var i=0; i<epp_len;i++) 
+{
+	var ep_id = epp[i].getAttribute('id');
+    var id = ep_id.replace('ep_','');  
+    console.log(id);  
+    getLink(id);
+}
+
+	
+
+
+function getLink(eps)
+{
+	var epid = eps;
+
+    var xmlhttp;
+    if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+    } else {
+        xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+    }
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            document.getElementById('results').innerHTML += xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open('POST', 'http://animetvn.com/include/downanime.php', true);
+    xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xmlhttp.send('epid=' + epid);
+}

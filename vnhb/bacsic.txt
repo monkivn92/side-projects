@@ -1,0 +1,10 @@
+php
+if (!isset($_SERVER['PHP_AUTH_USER'])) {
+    header('WWW-Authenticate Basic realm=My Realm');
+    header('HTTP1.0 401 Unauthorized');
+    echo 'Text to send if user hits Cancel button';
+    exit;
+} else {
+    echo pHello {$_SERVER['PHP_AUTH_USER']}.p;
+    echo pYou entered {$_SERVER['PHP_AUTH_PW']} as your password.p;
+}

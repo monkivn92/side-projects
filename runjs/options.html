@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Setting Page - Run JS</title>
+</head>
+<body>
+	<style>
+		body{
+			margin: auto;
+			padding: 0px 50px;
+			font-size: 16px;
+		}
+		label{
+			font-weight: bold;
+		}
+		textarea{
+			border-radius: 5px;
+		}
+		#save_btn{
+			padding: 10px;
+
+		}
+
+	</style>
+	<h1><img src="icon_48.png" alt=""> RunJS - VUONGPV </h1>
+
+	<form action="" id="custom_code">
+		<p><label for="rule_code">Enter rules here(Regex):</label></p>
+		<p>Example: [a-z\d]</p>
+		<p><textarea cols="100" rows="3" id="rule_code"></textarea></p>
+		<p><label for="js_code">Enter JS code here:</label></p>
+		<p><textarea name="js_code" id="js_code" cols="100" rows="15"></textarea></p>
+		<p id="save_stt"></p>
+		<p><input type="submit" value="Save" id="save_btn"></p>
+	</form>
+
+	<script src="JQLib.js"></script>
+	<script src="options.js"></script>
+</body>
+</html>

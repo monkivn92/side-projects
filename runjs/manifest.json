@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+
+    "name": "Run JS",
+    "description": "VUONGPV: This extension runs custom javascript code",
+    "version": "1.1",
+
+    "permissions": [
+        "activeTab",        
+        "tabs",
+        "storage",
+        "http://*/*",
+        "https://*/*",
+        "webNavigation", 
+        "*://*/*"
+    ],
+
+    "options_page": "options.html",
+
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],          
+          "js": ["JQLib.js", "content.js"]
+        }
+    ],
+
+    "browser_action": {
+        "default_icon": "icon_16.png",
+        "default_title": "Run JS"
+    },
+
+    "background": {
+        "scripts": ["background.js"]     
+    },
+
+    "icons": {
+        "16": "icon_16.png",
+        "48": "icon_48.png",
+        "128": "icon_128.png"
+    }
+}
