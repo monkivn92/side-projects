@@ -1,0 +1,86 @@
+body{
+	margin: 0px;
+	padding: 10px;
+	color: #666;
+
+}
+table, tbody, tr{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+td{
+	display: inline-block;
+	font-size: 26px;
+	line-height: 40px;
+	font-family: 'MS PGothic', Osaka, Arial, sans-serif; 
+}
+
+rt {
+    font-weight: bold;   
+    font-size: 16px;
+    font-family: 'MS PGothic', Osaka, Arial, sans-serif;
+    color: #F92672;
+}
+.vi-lang{
+	font-family:  Arial, sans-serif;
+    
+}
+
+.jp-lang{
+	font-family:  'MS PGothic', Osaka, Arial, sans-serif;
+	font-weight: bold;
+    
+}
+
+#kanji-panel{
+	width: 25%;
+	height: 700px;
+	vertical-align: top;
+	font-size: 20px;
+	font-family:  Arial, sans-serif;
+	line-height: 20px;
+}
+#kanji-panel rt{
+	font-size: 12px;
+	padding: 10px;
+}
+
+#kikitori-panel{
+	width: 68%;	
+	position: relative;
+	height: 700px;
+}
+
+.card{
+	border: 1px solid #eee;
+	border-radius: 10px;
+	padding: 10px;
+	margin :10px;
+	-webkit-box-shadow: 0px 7px 70px -16px rgba(170,170,170,1);
+-moz-box-shadow: 0px 7px 70px -16px rgba(170,170,170,1);
+box-shadow: 0px 7px 70px -16px rgba(170,170,170,1);
+}
+
+.card-item{
+	display:none;
+	position: absolute;
+	left:15px;
+	top:10px;
+	width: 98%;
+}
+
+.card-item.active{
+	display: block;
+}
+
+#hidden-controller{
+	margin-top: 200px;
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+	display: none;
+}
+#hidden-controller.active{
+	display: block;
+}

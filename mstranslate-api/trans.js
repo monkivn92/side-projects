@@ -11,6 +11,8 @@ $(document).ready(function() {
 
 		if(txt_selected != '')
 		{	
+
+			//http://api.microsofttranslator.com/V2/Http.svc/Speak?language=ja&text=%E9%9B%A8%E3%81%AE%E3%81%8A%E3%81%9D%E3%82%8C%E8%AD%A6%E6%88%92%E3%82%92&format=audio/mp3&appId=3AFAC12D1A7C674242EE37C45BD5E3293DDF4A74&options=MaxQuality|male
 		
 			$.get('http://api.microsofttranslator.com/V2/Ajax.svc/Translate?from=ja&to=vi&text='+txt_selected+'&contentType=text/plain&appId=3AFAC12D1A7C674242EE37C45BD5E3293DDF4A74', function(data, status){
 		                
@@ -37,3 +39,4 @@ $(document).ready(function() {
 	});	
 	
 });
+
