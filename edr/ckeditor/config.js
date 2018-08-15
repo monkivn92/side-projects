@@ -22,8 +22,9 @@ CKEDITOR.editorConfig = function( config ) {
 		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
 		{ name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ] },
 		{ name: 'styles' },
-		{ name: 'colors' },
-		{ name: 'about' }
+		{ name: 'colors' },			
+		{ name: 'about' },
+		{ name: 'pvv' }
 	];
 
 	// Remove some buttons provided by the standard plugins, which are
@@ -36,6 +37,11 @@ CKEDITOR.editorConfig = function( config ) {
 	// Simplify the dialog windows.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 
-	config.extraPlugins = 'font,justify,tabletools,colorbutton';
+	config.extraPlugins = 'font,justify,tabletools,colorbutton,vuongpv';
 	//config.extraPlugins = ;
+	
+	config.fontSize_defaultLabel = '18';
+	config.skin = 'moono-dark';
 };
+
+CKEDITOR.addCss( 'body { background-color: #c0c0c0;  } p{ font-size: 18px; }' );
